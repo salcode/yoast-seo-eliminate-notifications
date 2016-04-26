@@ -31,20 +31,23 @@ add_filter( 'get_user_metadata', 'salcode_yoast_seo_eliminate_notifications', 10
  * @return null|string      returns the override value for Yoast SEO meta_keys and the original
  *                          value (e.g. null) for all other meta_keys
  */
-function salcode_yoast_seo_eliminate_notifications( $value, $object_id, $meta_key, $single ) {
 
-	/**
-	 * Suppress the tour message popup.
-	 */
-	if ( 'wpseo_ignore_tour' === $meta_key ) {
-		return '1';
-	}
-	/**
-	 * Suppress the After Update Notice, Find Out What's New admin notice.
-	 */
-	if ( 'wpseo_seen_about_version' === $meta_key ) {
-		return '9999.0.0';
-	}
+if ( ! function_exists( 'salcode_yoast_seo_eliminate_notifications' ) ) {
+	function salcode_yoast_seo_eliminate_notifications( $value, $object_id, $meta_key, $single ) {
 
-	return $value;
+		/**
+		 * Suppress the tour message popup.
+		 */
+		if ( 'wpseo_ignore_tour' === $meta_key ) {
+			return '1';
+		}
+		/**
+		 * Suppress the After Update Notice, Find Out What's New admin notice.
+		 */
+		if ( 'wpseo_seen_about_version' === $meta_key ) {
+			return '9999.0.0';
+		}
+
+		return $value;
+	}
 }
