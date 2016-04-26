@@ -1,0 +1,10 @@
+{
+	"name": "salcode/yoast-seo-eliminate-notifications",
+	"description": "WordPress Plugin to disable Yoast SEO notifications",
+	"type": "wordpress-plugin",
+	"homepage": "https://github.com/salcode/yoast-seo-eliminate-notifications",
+	"license": "GPL-2.0+",
+	"require": {
+		"composer/installers": "~1.0"
+	}
+}
