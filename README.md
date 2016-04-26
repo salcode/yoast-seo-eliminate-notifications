@@ -4,7 +4,7 @@ Suppresses the Yoast SEO messages to "Take the Tour" and see "What's New". Teste
 
 ## More Information
 
-See https://salferrarello.com/yoast-seo-suppress-messages/
+See https://salferrarello.com/yoast-seo-eliminate-notifications/
 
 ## Author
 

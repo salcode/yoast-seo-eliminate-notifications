@@ -1,15 +1,15 @@
 <?php
 /**
- * Plugin Name: Yoast SEO Suppress Messages
- * Plugin URI: http://salferrarello.com/yoast-seo-suppress-messages/
+ * Plugin Name: Yoast SEO Eliminate Notifications
+ * Plugin URI: https://salferrarello.com/yoast-seo-eliminate-notifications/
  * Description: Suppresses the Yoast SEO messages to "Take the Tour" and see "What's New". Tested on Yoast SEO 3.2.3
- * Version: 0.1.1
+ * Version: 0.2.0
  * Author: Sal Ferrarello
  * Author URI: http://salferrarello.com/
- * Text Domain: yoast-seo-suppress-messages
+ * Text Domain: yoast-seo-eliminate-notifications
  * Domain Path: /languages
  *
- * @package yoast-seo-suppress-messages
+ * @package yoast-seo-eliminate-notifications
  */
 
 // If this file is called directly, abort.
@@ -17,7 +17,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-add_filter( 'get_user_metadata', 'salcode_yoast_seo_suppress_messages', 10, 4 );
+add_filter( 'get_user_metadata', 'salcode_yoast_seo_eliminate_notifications', 10, 4 );
 
 /**
  * Modify Yoast SEO user meta values
@@ -31,7 +31,7 @@ add_filter( 'get_user_metadata', 'salcode_yoast_seo_suppress_messages', 10, 4 );
  * @return null|string      returns the override value for Yoast SEO meta_keys and the original
  *                          value (e.g. null) for all other meta_keys
  */
-function salcode_yoast_seo_suppress_messages( $value, $object_id, $meta_key, $single ) {
+function salcode_yoast_seo_eliminate_notifications( $value, $object_id, $meta_key, $single ) {
 
 	/**
 	 * Suppress the tour message popup.
