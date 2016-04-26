@@ -5,7 +5,7 @@
  * Description: Suppresses the Yoast SEO messages to "Take the Tour" and see "What's New". Tested on Yoast SEO 3.2.3
  * Version: 0.2.0
  * Author: Sal Ferrarello
- * Author URI: http://salferrarello.com/
+ * Author URI: https://salferrarello.com/
  * Text Domain: yoast-seo-eliminate-notifications
  * Domain Path: /languages
  *
